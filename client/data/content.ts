@@ -46,11 +46,13 @@ export const patrons = [
 ];
 
 export const team = [
+  /*
   {
     name: "Event Team",
     role: "Operations & Delivery",
     image: "https://igiehonfoundation.org/assets/images/eventteam.webp",
   },
+  */
 ];
 
 export const partners = [
