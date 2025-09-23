@@ -25,10 +25,10 @@ export function Footer() {
           <h4 className="font-semibold mb-3">Contact</h4>
           <ul className="text-sm space-y-2 text-muted-foreground">
             <li>
-              Registered Address: F19, Lekki Town Square Mall, Lekki Phase 1,
-              Lagos
+              Lagos Office: F19, Lekki Town Square Mall, Providence Road, Marwa, Lekki, Phase 1, Lagos
             </li>
-            <li>Event Venue: SIO Event Center, GRA, Benin City, Edo State</li>
+            <li>Event Venue: SIO Event Center, 8, Red Cross Crescent, Off Ikpopan Rd,GRA, Benin City, Edo State
+                    </li>
             <li>Email: info@igiehonfoundation.org</li>
           </ul>
         </div>
