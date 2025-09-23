@@ -2,7 +2,7 @@ export const upcomingEvent = {
   title: "IMT 2025: Igiehon Mathematics Tournament",
   date: "29 Nov 2025",
   venue: "SIO Event Center, GRA, Benin City, Edo State",
-  registrationOpens: "20 Sept 2025",
+  registrationOpens: "1 Oct 2025",
 };
 
 export const impactStats = [
@@ -20,13 +20,13 @@ export const pastEvents = [
   },
   {
     title: "Winners & Awards",
-    date: "Nov 2024",
+    date: "Nov 2023",
     image:
       "https://igiehonfoundation.org/assets/images/winnersawsrd-902x856.webp",
   },
   {
     title: "Students Showcase",
-    date: "Nov 2024",
+    date: "Nov 2023",
     image: "https://igiehonfoundation.org/assets/images/students-696x759.webp",
   },
 ];
@@ -34,12 +34,12 @@ export const pastEvents = [
 export const patrons = [
   {
     name: "Engr. Osa Igiehon",
-    role: "Patron",
+    role: "Founder",
     image: "https://igiehonfoundation.org/assets/images/engr.-osa-511x571.webp",
   },
   {
     name: "Mrs. Nosa Igiehon",
-    role: "Chairperson",
+    role: "Founder, Chairperson",
     image:
       "https://igiehonfoundation.org/assets/images/nosaigiehon-396x393.webp",
   },
