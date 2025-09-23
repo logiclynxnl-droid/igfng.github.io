@@ -25,7 +25,7 @@ export default function Contact() {
                   <h3 className="font-semibold">Contact Details</h3>
                   <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                     <li>
-                      Registered Address: F19, Lekki Town Square Mall, Providence Road, Marwa, Lekki
+                      Lagos Office: F19, Lekki Town Square Mall, Providence Road, Marwa, Lekki
                       Phase 1, Lagos
                     </li>
                     <li>
