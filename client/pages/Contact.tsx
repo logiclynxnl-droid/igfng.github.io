@@ -25,11 +25,11 @@ export default function Contact() {
                   <h3 className="font-semibold">Contact Details</h3>
                   <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                     <li>
-                      Registered Address: F19, Lekki Town Square Mall, Lekki
+                      Registered Address: F19, Lekki Town Square Mall, Providence Road, Marwa, Lekki
                       Phase 1, Lagos
                     </li>
                     <li>
-                      Event Venue: SIO Event Center, GRA, Benin City, Edo State
+                      Event Venue: SIO Event Center, 8, Red Cross Crescent, Off Ikpopan Rd,GRA, Benin City, Edo State
                     </li>
                     <li>Email: info@igiehonfoundation.org</li>
                   </ul>
