@@ -10,7 +10,7 @@ const navItems = [
   { label: "Programs", to: "/programs" },
   { label: "Events", to: "/events" },
   { label: "Impact", to: "/#impact" },
-  { label: "Team", to: "/#team" },
+  { label: "Executive Leadership", to: "/about#executive-leadership" },
   { label: "Partners", to: "/#partners" },
   { label: "Volunteer", to: "/volunteer" },
   { label: "Contact", to: "/contact" },
@@ -34,15 +34,16 @@ export function Header() {
             <NavLink
               key={item.to}
               to={item.to}
-              className={({ isActive }) =>
-                `text-sm font-medium transition-colors hover:text-primary ${
-                  isActive ||
-                  (item.to.startsWith("/#") &&
-                    location.hash === item.to.slice(1))
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                }`
-              }
+              className={({ isActive }) => {
+                const isAnchor = item.to.includes("#");
+                const [path, hash] = isAnchor ? item.to.split("#") : [item.to, ""];
+                const active = isAnchor
+                  ? location.pathname === path && location.hash === `#${hash}`
+                  : isActive;
+                return `text-sm font-medium transition-colors hover:text-primary ${
+                  active ? "text-primary" : "text-muted-foreground"
+                }`;
+              }}
             >
               {item.label}
             </NavLink>
