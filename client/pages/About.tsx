@@ -83,9 +83,9 @@ export default function About() {
                 <div className="rounded-2xl border bg-card p-6 h-full">
                   <h3 className="text-xl font-semibold">Core Values</h3>
                   <ul className="mt-2 text-sm text-muted-foreground space-y-1 list-disc pl-5">
-                    <li>Promote: Excellence, Recognition</li>
-                    <li>With: Integrity, Respect, Service, Collaboration</li>
-                    <li>Ensure: Stewardship, Inclusion, Sustainability</li>
+                    <li>Promote: Excellence and Recognition</li>
+                    <li>With: Integrity, Respect, Service and Collaboration</li>
+                    <li>Whilst ensuring: Stewardship, Inclusion and Sustainability</li>
                   </ul>
                 </div>
               </Reveal>
