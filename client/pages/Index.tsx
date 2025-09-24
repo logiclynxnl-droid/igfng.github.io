@@ -258,28 +258,32 @@ export default function Index() {
             ))}
           </div>
 
-          <h3 className="text-2xl font-bold tracking-tight mt-12">Lead Team</h3>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-            {team.map((m) => (
-              <Reveal key={m.name}>
-                <div className="rounded-2xl border bg-card overflow-hidden">
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img
-                      src={m.image}
-                      alt={m.name}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <div className="font-semibold">{m.name}</div>
-                    <div className="text-sm text-muted-foreground">
-                      {m.role}
+          {team.length > 0 && (
+            <>
+              <h3 className="text-2xl font-bold tracking-tight mt-12">Lead Team</h3>
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                {team.map((m) => (
+                  <Reveal key={m.name}>
+                    <div className="rounded-2xl border bg-card overflow-hidden">
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img
+                          src={m.image}
+                          alt={m.name}
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                      <div className="p-5">
+                        <div className="font-semibold">{m.name}</div>
+                        <div className="text-sm text-muted-foreground">
+                          {m.role}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+                  </Reveal>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </section>
 
