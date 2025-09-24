@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/form";
 import type { RegistrationPayload, RegistrationResponse } from "@shared/api";
 import { toast } from "sonner";
+import { upcomingEvent } from "@/data/content";
 
 const schema = z
   .object({
@@ -97,15 +98,24 @@ export function RegistrationForm({
     },
   });
 
-  const isBeforeOpenDate = useMemo(() => {
-    // Registration opens on Sept 20, 2025 (00:00 local)
-    const open = new Date("2025-09-20T00:00:00");
-    return new Date() < open;
+  const { isBeforeStart, isAfterEnd } = useMemo(() => {
+    const now = new Date();
+    const start = new Date(upcomingEvent.registrationStart);
+    const end = new Date(upcomingEvent.registrationEnd);
+    return {
+      isBeforeStart: now < start,
+      isAfterEnd: now > end,
+    };
   }, []);
 
   async function onSubmit(values: z.infer<typeof schema>) {
-    if (isBeforeOpenDate && (values.interest === "event" || !values.interest)) {
-      toast.warning("Registration opens on 20 Sept 2025.");
+    if (
+      (isBeforeStart || isAfterEnd) &&
+      (values.interest === "event" || !values.interest)
+    ) {
+      toast.warning(
+        `Registration is only open from ${upcomingEvent.registrationWindow}.`,
+      );
       return;
     }
 
@@ -338,10 +348,10 @@ export function RegistrationForm({
           )}
         />
         <div className="md:col-span-2 flex items-center justify-between gap-4">
-          {isBeforeOpenDate ? (
+          {isBeforeStart || isAfterEnd ? (
             <p className="text-sm text-amber-600">
-              Registration opens 20 Sept 2025. You can still submit interest for
-              volunteering or partnerships.
+              Registration window: {upcomingEvent.registrationWindow}. You can
+              still submit interest for volunteering or partnerships.
             </p>
           ) : (
             <div />

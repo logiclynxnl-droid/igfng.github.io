@@ -42,7 +42,7 @@ export default function Events() {
                   </p>
                   <ul className="mt-4 list-disc pl-5 text-sm text-muted-foreground space-y-1">
                     <li>
-                      Registration opens {upcomingEvent.registrationOpens}
+                      Registration Window: {upcomingEvent.registrationWindow}
                     </li>
                     <li>Initial Round: Written test</li>
                     <li>Finals: Oral segment</li>
