@@ -10,7 +10,6 @@ const navItems = [
   { label: "Programs", to: "/programs" },
   { label: "Events", to: "/events" },
   { label: "Impact", to: "/#impact" },
-  { label: "Executive Leadership", to: "/about#executive-leadership" },
   { label: "Partners", to: "/#partners" },
   { label: "Volunteer", to: "/volunteer" },
   { label: "Contact", to: "/contact" },
