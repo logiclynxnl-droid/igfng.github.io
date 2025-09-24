@@ -29,7 +29,7 @@ export default function Register() {
               </p>
               <ul className="mt-4 text-sm list-disc pl-5 space-y-1 text-muted-foreground">
                 <li>Free registration</li>
-                <li>Registration opens {upcomingEvent.registrationOpens}</li>
+                <li>Registration Window: {upcomingEvent.registrationWindow}</li>
               </ul>
               <div className="mt-6 rounded-xl border bg-card p-5">
                 <h3 className="font-semibold">Eligibility Criteria</h3>

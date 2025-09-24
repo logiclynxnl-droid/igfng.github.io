@@ -85,7 +85,7 @@ export default function Index() {
                 {upcomingEvent.date} · {upcomingEvent.venue}
               </p>
               <p className="text-sm mt-1">
-                Registration opens {upcomingEvent.registrationOpens}
+                Registration Window: {upcomingEvent.registrationWindow}
               </p>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function Index() {
             <ul className="mt-4 text-sm list-disc pl-5 space-y-1 text-muted-foreground">
               <li>Free registration</li>
               <li>Open to senior secondary schools in Edo State</li>
-              <li>Registration opens {upcomingEvent.registrationOpens}</li>
+              <li>Registration Window: {upcomingEvent.registrationWindow}</li>
             </ul>
             <div className="mt-6 grid grid-cols-2 gap-3">
               <Button asChild variant="secondary">
