@@ -43,7 +43,7 @@ export const patrons = [
   },
   {
     name: "Mrs. Nosa Igiehon",
-    role: "Founder, Chairperson",
+    role: "Co-Founder, Chairperson",
     image:
       "https://igiehonfoundation.org/assets/images/nosaigiehon-396x393.webp",
   },
