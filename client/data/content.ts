@@ -32,7 +32,7 @@ export const pastEvents = [
   },
   {
     title: "Students Showcase",
-    date: "Nov 2023",
+    date: "Nov 2024",
     image: "https://igiehonfoundation.org/assets/images/students-696x759.webp",
   },
 ];
@@ -47,10 +47,7 @@ export const patrons = [
     name: "Mrs. Nosa Igiehon",
     role: "Co-Founder, Chairperson",
     image:
-      "igfsite/public/images
-/IMG-20250925-WA0000 (1).jpg",
-
-     /* "https://igiehonfoundation.org/assets/images/nosaigiehon-396x393.webp",*/
+      "https://igiehonfoundation.org/assets/images/nosaigiehon-396x393.webp"
   },
 ];
 
