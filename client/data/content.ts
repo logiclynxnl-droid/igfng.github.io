@@ -26,7 +26,7 @@ export const pastEvents = [
   },
   {
     title: "Winners & Awards",
-    date: "Nov 2023",
+    date: "Nov 2024",
     image:
       "https://igiehonfoundation.org/assets/images/winnersawsrd-902x856.webp",
   },
@@ -48,7 +48,7 @@ export const patrons = [
     role: "Co-Founder, Chairperson",
     image:
       "igfsite/public/images
-/IMG-20250925-WA0000 (1).jpg"
+/IMG-20250925-WA0000 (1).jpg",
 
      /* "https://igiehonfoundation.org/assets/images/nosaigiehon-396x393.webp",*/
   },
