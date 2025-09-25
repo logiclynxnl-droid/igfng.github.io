@@ -20,7 +20,9 @@ export const pastEvents = [
   {
     title: "IMT 2024 — Edo Innovation Hub",
     date: "16 Nov 2024",
-    image: "https://igiehonfoundation.org/assets/images/2-1200x562.webp",
+    image: "igfsite/public/images
+/IMG-20250925-WA0000 (1).jpg
+",
   },
   {
     title: "Winners & Awards",
@@ -45,7 +47,10 @@ export const patrons = [
     name: "Mrs. Nosa Igiehon",
     role: "Co-Founder, Chairperson",
     image:
-      "https://igiehonfoundation.org/assets/images/nosaigiehon-396x393.webp",
+      "igfsite/public/images
+/IMG-20250925-WA0000 (1).jpg"
+
+     /* "https://igiehonfoundation.org/assets/images/nosaigiehon-396x393.webp",*/
   },
 ];
 
