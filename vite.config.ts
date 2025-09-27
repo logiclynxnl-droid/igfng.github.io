@@ -5,6 +5,7 @@ import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/", // ✅ important for GitHub Pages
   server: {
     host: "::",
     port: 8080,
@@ -14,7 +15,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "dist/spa",
+    outDir: "dist", // ✅ deploy this folder to GitHub Pages
   },
   plugins: [react(), expressPlugin()],
   resolve: {
