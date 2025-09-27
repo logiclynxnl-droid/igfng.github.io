@@ -90,28 +90,39 @@ export default function Events() {
                 <div className="relative">
                   <Carousel opts={{ align: "start", loop: true }}>
                     <CarouselContent>
-                      {pastEvents.map((e) => (
-                        <CarouselItem
-                          key={e.title}
-                          className="md:basis-1/2 lg:basis-1/3"
-                        >
-                          <div className="group overflow-hidden rounded-2xl border bg-card">
-                            <div className="aspect-[16/10] overflow-hidden">
-                              <img
-                                src={e.image}
-                                alt={e.title}
-                                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                              />
-                            </div>
-                            <div className="p-4">
-                              <div className="text-sm text-muted-foreground">
-                                {e.date}
+                      {(() => {
+                        const max = 15;
+                        const items = [...pastEvents];
+                        while (items.length < max) {
+                          items.push({
+                            title: "Past Event",
+                            date: "",
+                            image: "/placeholder.svg",
+                          } as any);
+                        }
+                        return items.slice(0, max).map((e, idx) => (
+                          <CarouselItem
+                            key={`${e.title}-${idx}`}
+                            className="md:basis-1/2 lg:basis-1/3"
+                          >
+                            <div className="group overflow-hidden rounded-2xl border bg-card">
+                              <div className="aspect-[16/10] overflow-hidden">
+                                <img
+                                  src={e.image}
+                                  alt={e.title}
+                                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                />
                               </div>
-                              <div className="font-semibold">{e.title}</div>
+                              <div className="p-4">
+                                {e.date ? (
+                                  <div className="text-sm text-muted-foreground">{e.date}</div>
+                                ) : null}
+                                <div className="font-semibold">{e.title}</div>
+                              </div>
                             </div>
-                          </div>
-                        </CarouselItem>
-                      ))}
+                          </CarouselItem>
+                        ));
+                      })()}
                     </CarouselContent>
                     <CarouselPrevious className="-left-6" />
                     <CarouselNext className="-right-6" />
