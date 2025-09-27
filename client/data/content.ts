@@ -20,9 +20,7 @@ export const pastEvents = [
   {
     title: "IMT 2024 — Edo Innovation Hub",
     date: "16 Nov 2024",
-    image: "igfsite/public/images
-/IMG-20250925-WA0000 (1).jpg
-",
+    image: "https://igiehonfoundation.org/assets/images/students-696x759.webp",
   },
   {
     title: "Winners & Awards",
