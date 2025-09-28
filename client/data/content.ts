@@ -39,13 +39,13 @@ export const patrons = [
   {
     name: "Engr. Osa Igiehon",
     role: "Founder",
-    image: "/assets/images/engr.-osa-511x571.webp",
+    image: "/assets/images/Engr. Osa Igiehon.webp",
   },
   {
     name: "Mrs. Nosa Igiehon",
     role: "Co-Founder, Chairperson",
     image:
-      "/assets/images/nosaigiehon-396x393.webp"
+      "/assets/images/Mrs Nosa Igiehon.jpg"
   },
 ];
 
@@ -62,7 +62,7 @@ export const team = [
 export const partners = [
   {
     name: "Mathematics for Life Foundation",
-    logo: "/assets/images/maths4life-untitled-design.png",
+    logo: "/assets/images/1-579x430.webp",
     url: "https://maths4life.org",
   },
 ];
