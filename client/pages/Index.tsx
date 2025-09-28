@@ -13,7 +13,7 @@ import { useEffect } from "react";
 import { Reveal } from "@/components/Reveal";
 
 const heroImg = "/assets/images/students-696x759.webp";
-const logoUrl = "/assets/images/IFnewicon.jpg";
+const logoUrl = "/assets/images/IMT24_1.jpg";
 
 export default function Index() {
   const location = useLocation();
