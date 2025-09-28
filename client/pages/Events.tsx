@@ -108,10 +108,11 @@ export default function Events() {
                             <div className="group overflow-hidden rounded-2xl border bg-card">
                               <div className="aspect-[16/10] overflow-hidden">
                                 <img
-                                  src={e.image}
-                                  alt={e.title}
-                                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                />
+                                src={e.image}
+                                alt={e.title}
+                                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                onError={(ev) => (ev.currentTarget.src = "/placeholder.svg")}
+                              />
                               </div>
                               <div className="p-4">
                                 {e.date ? (
