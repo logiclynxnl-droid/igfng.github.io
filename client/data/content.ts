@@ -62,7 +62,7 @@ export const team = [
 export const partners = [
   {
     name: "Mathematics for Life Foundation",
-    logo: "/assets/images/math4life.webp",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F2f4ddb44415d4627a98c758ea56ce800%2Fa586334fbddc4251bbfcc771d3087405?format=webp&width=800",
     url: "https://maths4life.org",
   },
 ];
