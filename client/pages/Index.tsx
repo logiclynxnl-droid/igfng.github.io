@@ -13,7 +13,7 @@ import { useEffect } from "react";
 import { Reveal } from "@/components/Reveal";
 
 const heroImg = "/assets/images/students-696x759.webp";
-const logoUrl = "/assets/images/IMT24_1.jpg";
+const logoUrl = "https://cdn.builder.io/api/v1/image/assets%2F2f4ddb44415d4627a98c758ea56ce800%2Fd1c36fd4076d4a6eb870f5e8f231e918?format=webp&width=800";
 
 export default function Index() {
   const location = useLocation();
