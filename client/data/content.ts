@@ -20,20 +20,18 @@ export const pastEvents = [
   {
     title: "IMT 2024 — Edo Innovation Hub",
     date: "16 Nov 2024",
-    image: "igfsite/public/images
-/IMG-20250925-WA0000 (1).jpg
-",
+    image: "/assets/images/students-696x759.webp",
   },
   {
     title: "Winners & Awards",
     date: "Nov 2024",
     image:
-      "https://igiehonfoundation.org/assets/images/winnersawsrd-902x856.webp",
+      "/assets/images/winnersawsrd-902x856.webp",
   },
   {
     title: "Students Showcase",
     date: "Nov 2024",
-    image: "https://igiehonfoundation.org/assets/images/students-696x759.webp",
+    image: "/assets/images/students-696x759.webp",
   },
 ];
 
@@ -41,13 +39,13 @@ export const patrons = [
   {
     name: "Engr. Osa Igiehon",
     role: "Founder",
-    image: "https://igiehonfoundation.org/assets/images/engr.-osa-511x571.webp",
+    image: "/assets/images/Engr. Osa Igiehon.webp",
   },
   {
     name: "Mrs. Nosa Igiehon",
     role: "Co-Founder, Chairperson",
     image:
-      "https://igiehonfoundation.org/assets/images/nosaigiehon-396x393.webp"
+      "/assets/images/Mrs Nosa Igiehon.jpg"
   },
 ];
 
@@ -56,7 +54,7 @@ export const team = [
   {
     name: "Event Team",
     role: "Operations & Delivery",
-    image: "https://igiehonfoundation.org/assets/images/eventteam.webp",
+    image: "/assets/images/eventteam.webp",
   },
   */
 ];
@@ -64,7 +62,7 @@ export const team = [
 export const partners = [
   {
     name: "Mathematics for Life Foundation",
-    logo: "https://maths4life.org/assets/uploads/media-uploader/untitled-design211756093318.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F2f4ddb44415d4627a98c758ea56ce800%2Fa586334fbddc4251bbfcc771d3087405?format=webp&width=800",
     url: "https://maths4life.org",
   },
 ];

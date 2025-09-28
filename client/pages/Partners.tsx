@@ -76,6 +76,7 @@ export default function Partners() {
                       src={p.logo}
                       alt={p.name}
                       className="max-h-20 md:max-h-28 object-contain"
+                      onError={(ev) => (ev.currentTarget.src = "/placeholder.svg")}
                     />
                   </a>
                 </Reveal>

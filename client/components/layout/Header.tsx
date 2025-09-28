@@ -2,8 +2,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-const logoUrl =
-  "https://cdn.builder.io/api/v1/image/assets%2F14de5a695c9545c2aa5180d70bd1c72c%2F5827d0d341a54df4b1ad54daeb958e0e?format=webp&width=800";
+const logoUrl = "https://cdn.builder.io/api/v1/image/assets%2F2f4ddb44415d4627a98c758ea56ce800%2Fd1c36fd4076d4a6eb870f5e8f231e918?format=webp&width=800";
 
 const navItems = [
   { label: "About", to: "/about" },
@@ -26,7 +25,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logoUrl} alt="Igiehon Foundation" className="h-16 w-auto" />
+          <img src={logoUrl} alt="Igiehon Foundation" className="h-16 w-auto" onError={(e)=> (e.currentTarget.src = "/placeholder.svg")} />
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (

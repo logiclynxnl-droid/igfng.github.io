@@ -12,9 +12,8 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Reveal } from "@/components/Reveal";
 
-const heroImg =
-  "https://igiehonfoundation.org/assets/images/students-696x759.webp";
-const logoUrl = "https://igiehonfoundation.org/assets/images/IFnewicon.jpg";
+const heroImg = "/assets/images/students-696x759.webp";
+const logoUrl = "https://cdn.builder.io/api/v1/image/assets%2F2f4ddb44415d4627a98c758ea56ce800%2Fd1c36fd4076d4a6eb870f5e8f231e918?format=webp&width=800";
 
 export default function Index() {
   const location = useLocation();
@@ -41,6 +40,7 @@ export default function Index() {
             src={heroImg}
             alt="Students"
             className="h-full w-full object-cover opacity-20"
+            onError={(e) => (e.currentTarget.src = "/placeholder.svg")}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background/60 to-background" />
         </div>
@@ -51,6 +51,7 @@ export default function Index() {
                 src={logoUrl}
                 alt="Igiehon Foundation"
                 className="h-10 w-10 rounded"
+                onError={(e) => (e.currentTarget.src = "/placeholder.svg")}
               />
               <span className="text-sm uppercase tracking-widest text-primary font-semibold">
                 Igiehon Foundation
@@ -94,6 +95,7 @@ export default function Index() {
                   src={heroImg}
                   alt="Igiehon Tournament"
                   className="w-full h-full object-cover"
+                  onError={(e) => (e.currentTarget.src = "/placeholder.svg")}
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
               </div>
@@ -201,6 +203,7 @@ export default function Index() {
                     src={e.image}
                     alt={e.title}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    onError={(ev) => (ev.currentTarget.src = "/placeholder.svg")}
                   />
                 </div>
                 <div className="p-4">
