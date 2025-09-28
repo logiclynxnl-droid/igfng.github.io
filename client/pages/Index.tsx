@@ -12,9 +12,8 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Reveal } from "@/components/Reveal";
 
-const heroImg =
-  "https://igiehonfoundation.org/assets/images/students-696x759.webp";
-const logoUrl = "https://igiehonfoundation.org/assets/images/IFnewicon.jpg";
+const heroImg = "/assets/images/students-696x759.webp";
+const logoUrl = "/assets/images/IFnewicon.jpg";
 
 export default function Index() {
   const location = useLocation();
