@@ -137,14 +137,9 @@ export default function About() {
                         src={p.image}
                         alt={p.name}
                         className={
-                          p.role === "Chairperson"
-                            ? "h-full w-full object-contain p-2"
+                          (p.role ?? "").toLowerCase().includes("chairperson")
+                            ? "h-full w-full object-cover object-center"
                             : "h-full w-full object-cover object-top"
-                        }
-                        style={
-                          p.role === "Chairperson"
-                            ? { objectPosition: "center top" }
-                            : undefined
                         }
                       />
                     </div>
