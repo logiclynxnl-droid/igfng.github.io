@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Reveal } from "@/components/Reveal";
-import { TallyEmbed } from "@/components/TallyEmbed";
+import { RegistrationForm } from "@/components/RegistrationForm";
 
 export default function Volunteer() {
   return (
@@ -44,7 +44,7 @@ export default function Volunteer() {
             <div className="rounded-xl border bg-card p-6">
               <Reveal>
                 <h3 className="font-semibold mb-4">Volunteer Intake Form</h3>
-                <TallyEmbed url="https://tally.so/r/wg2X6N" height={900} />
+                <RegistrationForm interest="volunteer" />
               </Reveal>
             </div>
           </div>
