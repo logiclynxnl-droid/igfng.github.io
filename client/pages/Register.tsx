@@ -1,6 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { RegistrationForm } from "@/components/RegistrationForm";
+import { TallyEmbed } from "@/components/TallyEmbed";
 import { upcomingEvent } from "@/data/content";
 
 export default function Register() {
@@ -50,8 +50,16 @@ export default function Register() {
                 </ul>
               </div>
             </div>
-            <div className="rounded-2xl border bg-card/90 backdrop-blur p-6 shadow-lg ring-1 ring-border">
-              <RegistrationForm interest={interest} />
+            <div className="rounded-2xl border bg-card/90 backdrop-blur p-0 shadow-lg ring-1 ring-border overflow-hidden">
+              {(() => {
+                const map: Record<string, string> = {
+                  event: "https://tally.so/r/wkqXQ1",
+                  volunteer: "https://tally.so/r/wg2X6N",
+                  partner: "https://tally.so/r/3lQXE5",
+                };
+                const url = map[interest] || map.event;
+                return <TallyEmbed url={url} height={900} />;
+              })()}
             </div>
           </div>
         </section>
