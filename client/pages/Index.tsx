@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { RegistrationForm } from "@/components/RegistrationForm";
+import { TallyEmbed } from "@/components/TallyEmbed";
 import {
   impactStats,
   pastEvents,
@@ -40,6 +40,7 @@ export default function Index() {
             src={heroImg}
             alt="Students"
             className="h-full w-full object-cover opacity-20"
+            onError={(e) => (e.currentTarget.src = "/placeholder.svg")}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background/60 to-background" />
         </div>
@@ -50,6 +51,7 @@ export default function Index() {
                 src={logoUrl}
                 alt="Igiehon Foundation"
                 className="h-10 w-10 rounded"
+                onError={(e) => (e.currentTarget.src = "/placeholder.svg")}
               />
               <span className="text-sm uppercase tracking-widest text-primary font-semibold">
                 Igiehon Foundation
@@ -93,6 +95,7 @@ export default function Index() {
                   src={heroImg}
                   alt="Igiehon Tournament"
                   className="w-full h-full object-cover"
+                  onError={(e) => (e.currentTarget.src = "/placeholder.svg")}
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
               </div>
@@ -170,8 +173,8 @@ export default function Index() {
               </ul>
             </div>
           </div>
-          <div className="rounded-2xl border bg-card/90 backdrop-blur p-6 shadow-lg ring-1 ring-border">
-            <RegistrationForm interest="event" />
+          <div className="rounded-2xl border bg-card/90 backdrop-blur p-0 shadow-lg ring-1 ring-border overflow-hidden">
+            <TallyEmbed url="https://tally.so/r/wkqXQ1" height={900} />
           </div>
         </div>
       </section>
@@ -200,6 +203,7 @@ export default function Index() {
                     src={e.image}
                     alt={e.title}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    onError={(ev) => (ev.currentTarget.src = "/placeholder.svg")}
                   />
                 </div>
                 <div className="p-4">
