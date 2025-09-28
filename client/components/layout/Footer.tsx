@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-const logoUrl =
-  "https://cdn.builder.io/api/v1/image/assets%2F14de5a695c9545c2aa5180d70bd1c72c%2F5827d0d341a54df4b1ad54daeb958e0e?format=webp&width=800";
+const logoUrl = "/assets/images/IMT24_1.jpg";
 
 export function Footer() {
   return (
@@ -13,6 +12,7 @@ export function Footer() {
               src={logoUrl}
               alt="Igiehon Foundation"
               className="h-12 w-auto"
+              onError={(e)=> (e.currentTarget.src = "/placeholder.svg")}
             />
             <span className="font-extrabold text-lg">Igiehon Foundation</span>
           </div>
