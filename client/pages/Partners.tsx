@@ -2,7 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
-import { TallyEmbed } from "@/components/TallyEmbed";
+import { RegistrationForm } from "@/components/RegistrationForm";
 import { partners } from "@/data/content";
 
 export default function Partners() {
@@ -97,7 +97,7 @@ export default function Partners() {
               </Reveal>
               <div className="rounded-2xl border bg-card/90 backdrop-blur p-6 shadow-lg ring-1 ring-border">
                 <Reveal>
-                  <TallyEmbed url="https://tally.so/r/3lQXE5" height={900} />
+                  <RegistrationForm interest="partner" />
                 </Reveal>
               </div>
             </div>
