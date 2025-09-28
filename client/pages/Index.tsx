@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { TallyEmbed } from "@/components/TallyEmbed";
+import { RegistrationForm } from "@/components/RegistrationForm";
 import {
   impactStats,
   pastEvents,
@@ -173,8 +173,8 @@ export default function Index() {
               </ul>
             </div>
           </div>
-          <div className="rounded-2xl border bg-card/90 backdrop-blur p-0 shadow-lg ring-1 ring-border overflow-hidden">
-            <TallyEmbed url="https://tally.so/r/wkqXQ1" height={900} />
+          <div className="rounded-2xl border bg-card/90 backdrop-blur p-6 shadow-lg ring-1 ring-border">
+            <RegistrationForm interest="event" />
           </div>
         </div>
       </section>
